@@ -1,0 +1,55 @@
+:root {
+  --clr-header: #2C3E50;
+  --clr-sections: #1ABC9C;
+  --clr-footer: #3A546D;
+
+  --h-header: 90px;
+}
+
+/**********
+  UTILITY 
+***********/
+.debug {
+  min-height: 50px;
+  border: 1px solid red;
+}
+
+.as-container {
+  width: 60%;
+}
+
+/**********
+  GENERAL 
+***********/
+main section:nth-child(2n + 1) {
+  background-color: var(--clr-sections);
+}
+
+#jumbotron span {
+  height: 10px;
+}
+
+/**********
+  HEADER 
+***********/
+header {
+  background-color: var(--clr-header);
+}
+
+/**********
+  MAIN 
+***********/
+#contact a {
+  background-color: var(--clr-sections);
+}
+
+/**********
+  FOOTER 
+***********/
+#top-footer {
+  background-color: var(--clr-footer);
+}
+
+#bottom-footer {
+  background-color: var(--clr-header);
+}
