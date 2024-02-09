@@ -50,6 +50,38 @@ main section:nth-child(2n + 1) {
   color: white;
 }
 
+/**********
+  HEADER 
+***********/
+header {
+  height: var(--h-header);
+}
+
+header > nav {
+  background-color: var(--clr-dark);
+}
+
+/**********
+  MAIN 
+***********/
+.as-icon-star::after,
+.as-icon-star::before {
+  content:'';
+  width: 14%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: currentColor;
+}
+
+.as-button {
+  background-color: var(--clr-green);
+  border: none;
+}
+
+.as-button:hover {
+  background-color: #1aa186;
+}
+
 /* Jumbotron */
 #jumbotron img {
   width: 260px;
@@ -57,6 +89,17 @@ main section:nth-child(2n + 1) {
 
 #jumbotron .as-txt-jumbo {
   font-size: 1.1rem;
+}
+
+/* Portfolio */
+.as-plus {
+  background-color: rgba(26, 188, 156, 0.6);
+  font-size: 7rem;
+  cursor: pointer;
+}
+
+.as-card:hover .as-plus {
+  z-index: 2 !important;
 }
 
 /* Contact */
@@ -77,38 +120,6 @@ main section:nth-child(2n + 1) {
 #contact textarea::placeholder {
   color: #2b3d4f;
 } 
-
-/**********
-  HEADER 
-***********/
-header {
-  height: var(--h-header);
-}
-
-header > nav {
-  background-color: var(--clr-dark);
-}
-
-/**********
-  MAIN 
-***********/
-.as-icon-star::after,
-.as-icon-star::before {
-  content:'';
-  width: 15%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: currentColor;
-}
-
-.as-button {
-  background-color: var(--clr-green);
-  border: none;
-}
-
-.as-button:hover {
-  background-color: #1aa186;
-}
 
 #contact a {
   background-color: var(--clr-green);
@@ -138,7 +149,7 @@ header > nav {
   }
 
   #jumbotron .as-txt-jumbo {
-    font-size: 1.55rem;
-  }
-  
+  font-size: 1.55rem;
+}
+
 }
