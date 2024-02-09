@@ -10,11 +10,6 @@
 /**********
   UTILITY 
 ***********/
-.debug {
-  min-height: 50px;
-  border: 1px solid red;
-}
-
 .as-container {
   width: 60%;
   max-width: 1000px;
@@ -39,6 +34,10 @@ html {
 
 body {
   font-family: 'Helvetica Neue', sans-serif;
+}
+
+section {
+  padding: 45px 0;
 }
 
 h1 {
@@ -75,11 +74,11 @@ header > nav {
 
 .as-button {
   background-color: var(--clr-green);
-  border: none;
 }
 
 .as-button:hover {
   background-color: #1aa186;
+  color: white;
 }
 
 /* Jumbotron */
@@ -119,6 +118,7 @@ header > nav {
 #contact input::placeholder,
 #contact textarea::placeholder {
   color: #2b3d4f;
+  font-size: 1.4rem;
 } 
 
 #contact a {
@@ -128,6 +128,26 @@ header > nav {
 /**********
   FOOTER 
 ***********/
+footer {
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .as-icon {
+  display: inline-block;
+  width: 55px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6px;  
+}
+
 #top-footer {
   background-color: var(--clr-footer);
 }
@@ -148,8 +168,19 @@ header > nav {
     font-size: 3.8rem;
   }
 
+  h2 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
   #jumbotron .as-txt-jumbo {
   font-size: 1.55rem;
-}
+  }
 
+  section {
+    padding: 80px 0 60px ;
+  }
 }

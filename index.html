@@ -34,13 +34,13 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
           
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#portfolio">Portfolio</a>
+              <a class="nav-link text-white" aria-current="page" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about">about</a>
+              <a class="nav-link text-white" aria-current="page" href="#about">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+              <a class="nav-link text-white" aria-current="page" href="#contact">Contact</a>
             </li>
         
           </ul>
@@ -52,7 +52,7 @@
   <main>
 
     <!-- JUMBOTRON -->
-    <section id="jumbotron" class="text-uppercase py-5">
+    <section id="jumbotron" class="text-uppercase">
       <div class="container text-center">
         <img src="assets/img/avatar.svg" alt="avatar">
         <h1 class="my-3">Start bootstrap</h1>
@@ -65,7 +65,7 @@
     <!-- /JUMBOTRON -->
 
     <!-- PORTFOLIO -->
-    <section id="portfolio" class="text-center as-txt-dark py-5">
+    <section id="portfolio" class="text-center as-txt-dark">
       <div class="container">
         <h2 class="titles-dark text-uppercase">Portfolio</h2>
         <div class="d-flex align-items-center justify-content-center as-icon-star my-4">
@@ -133,7 +133,7 @@
     <!-- /PORTFOLIO -->
 
     <!-- ABOUT -->
-    <section id="about" class="text-center py-5">
+    <section id="about" class="text-center">
       <div class="container mx-auto">
         <h2 class="text-uppercase">about</h2>
         <div class="d-flex align-items-center justify-content-center my-4 as-icon-star">
@@ -143,12 +143,12 @@
       
       <div class="as-container"> 
         <div class="row row-cols-1 row-cols-md-2 text-start">
-          <div class="col mb-4">Freelancer is a free bootstrap
+          <div class="col mb-4 fs-4 pe-md-4">Freelancer is a free bootstrap
             theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</div>
-          <div class="col">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</div>
+          <div class="col fs-4">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</div>
         </div>
         <div class="mt-5">
-          <a class="text-white text-center text-decoration-none border border-white rounded-2 py-2 px-3 as-button" href="#">
+          <a type="button" class="btn btn-outline-light as-button">
             <i class="fa-solid fa-download"></i>
             <span>Download</span>
           </a>
@@ -158,7 +158,7 @@
     <!-- /ABOUT -->
 
     <!-- CONTACT -->
-    <section id="contact" class="py-5 as-txt-dark">
+    <section id="contact" class="as-txt-dark">
       <div class="container mx-auto">
         <h2 class="text-uppercase text-center titles-dark">contact me</h2>
         <div class="d-flex align-items-center justify-content-center my-4  as-icon-star">
@@ -167,11 +167,11 @@
       </div>
       <div class="as-container">
         <form action="#">
-          <input type="text" class="form-control" placeholder="Name">
-          <input type="email" class="form-control" placeholder="Email Address">
-          <input type="text" class="form-control" placeholder="Phone Number">
-          <textarea class="form-control" placeholder="Message" id="floatingTextarea" rows="5"></textarea>
-          <button type="submit" class="as-button btn btn-success my-3">Send</button>
+          <input type="text" class="form-control py-3" placeholder="Name">
+          <input type="email" class="form-control py-3" placeholder="Email Address">
+          <input type="text" class="form-control py-3" placeholder="Phone Number">
+          <textarea class="form-control py-3" placeholder="Message" id="floatingTextarea" rows="5"></textarea>
+          <button type="submit" class="as-button border-0 btn btn-success my-3">Send</button>
         </form>
       </div>
     </section>
@@ -184,16 +184,33 @@
     <section id="top-footer" class="py-5">
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
-          <div class="col mb-4 py-2">
+
+          <div class="col py-3">
             <h4 class="text-uppercase fw-medium">LOCation</h4>
-            <p class="fs-5 fw-medium">2215 John Daniel Drive Clark, MO 54243</p>
+            <p class="fw-medium">2215 John Daniel Drive Clark, MO 54243</p>
           </div>
-          <div class="col mb-4 py-2">
+
+          <div class="col py-3">
             <h4 class="text-uppercase fw-medium">Around the web</h4>
-            <p class="fs-5 fw-medium">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, corrupti?</p></div>
-          <div class="col mb-4 py-2">
+            <div class="d-flex justify-content-center">
+              <a class="border border-white as-icon" href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a class="border border-white as-icon" href="#">
+                <i class="fa-brands fa-google-plus-g"></i>
+              </a>
+              <a class="border border-white as-icon" href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a class="border border-white as-icon" href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col py-3">
             <h4 class="text-uppercase fw-medium">About freelancer</h4>
-            <p class="fs-5 fw-medium">Freelance is a free to use, open source Bootstrap theme created by <span class="autor">Start Bootstrap</span></p>
+            <p class="fw-medium">Freelance is a free to use, open source Bootstrap theme created by <span class="autor">Start Bootstrap</span></p>
           </div>
         </div>
       </div>
