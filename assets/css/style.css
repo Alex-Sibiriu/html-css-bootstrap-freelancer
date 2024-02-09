@@ -1,7 +1,8 @@
 :root {
-  --clr-header: #2C3E50;
-  --clr-sections: #1ABC9C;
+  --clr-dark: #2C3E50;
+  --clr-green: #1ABC9C;
   --clr-footer: #3A546D;
+  --clr-dark-titles: #333;
 
   --h-header: 90px;
 }
@@ -16,31 +17,101 @@
 
 .as-container {
   width: 60%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.titles-dark {
+  color: var(--clr-dark-titles);
+}
+
+.as-txt-dark {
+  color: var(--clr-dark);
 }
 
 /**********
   GENERAL 
 ***********/
-main section:nth-child(2n + 1) {
-  background-color: var(--clr-sections);
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--h-header);
 }
 
-#jumbotron span {
-  height: 10px;
+body {
+  font-family: 'Helvetica Neue', sans-serif;
 }
+
+h1 {
+  font-size: 2.2rem;
+}
+
+main section:nth-child(2n + 1) {
+  background-color: var(--clr-green);
+  color: white;
+}
+
+/* Jumbotron */
+#jumbotron img {
+  width: 260px;
+}
+
+#jumbotron .as-txt-jumbo {
+  font-size: 1.1rem;
+}
+
+/* Contact */
+#contact input,
+#contact textarea {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  box-shadow: none;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #2b3d4f;
+} 
 
 /**********
   HEADER 
 ***********/
 header {
-  background-color: var(--clr-header);
+  height: var(--h-header);
+}
+
+header > nav {
+  background-color: var(--clr-dark);
 }
 
 /**********
   MAIN 
 ***********/
+.as-icon-star::after,
+.as-icon-star::before {
+  content:'';
+  width: 15%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: currentColor;
+}
+
+.as-button {
+  background-color: var(--clr-green);
+  border: none;
+}
+
+.as-button:hover {
+  background-color: #1aa186;
+}
+
 #contact a {
-  background-color: var(--clr-sections);
+  background-color: var(--clr-green);
 }
 
 /**********
@@ -50,6 +121,24 @@ header {
   background-color: var(--clr-footer);
 }
 
+#top-footer .autor {
+  color: var(--clr-green);
+}
+
 #bottom-footer {
-  background-color: var(--clr-header);
+  background-color: var(--clr-dark);
+}
+
+/**************
+  MEDIA QUERY 
+***************/
+@media (min-width:768px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  #jumbotron .as-txt-jumbo {
+    font-size: 1.55rem;
+  }
+  
 }
